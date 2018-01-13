@@ -6,8 +6,8 @@ TYPE=GAME           NICE=-5
 # Type: PLAYER AUDIO/VIDEO
 # Try to add more CPU power to decrease latency/lags
 # Try to add real time io for avoiding lags
-TYPE=PLAYER_AUDIO   NICE=-3 IOCLASS=realtime
-TYPE=PLAYER_VIDEO   NICE=-3 IOCLASS=realtime
+TYPE=PLAYER_AUDIO   NICE=-10 IOCLASS=realtime IONICE=3
+TYPE=PLAYER_VIDEO   NICE=-10 IOCLASS=realtime IONICE=3
 
 # Must have more CPU/IO time, but not so much as other apps
 TYPE=IMAGE_VIEW     NICE=-3
