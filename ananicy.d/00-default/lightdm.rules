@@ -1,0 +1,1 @@
+NAME=lightdm TYPE=LowLatency_RT PGREP_ARGS='-wx'
